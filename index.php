@@ -12,12 +12,18 @@
 <body>
     <p>Que onda soy un mensaje</p>
     <?php
-        
-        $yahirRoba=400;
-        $yahirLeDaMama=10;
+        $angelRoba=30;
+        $angelLeDaMama=65;
+        $sumaDineroAngel=$angelLeDaMama+$angelRoba;
+        echo ("El total de Angel es:");
+        echo $sumaDineroAngel;
+
+    
+        $yahirRoba=1000;
+        $yahirLeDaMama=2000;
         $sumaDineroYAhir=$yahirLeDaMama+$yahirRoba;
 
-        echo ("El total de Yahir es:");
+        echo ("<br>El total de Yahir es:");
         echo $sumaDineroYAhir;
 
         $yoRobo=2000;
@@ -35,12 +41,14 @@
         $sumaMigue=$migueRoba+$migueLeDaMama;
         echo ("<br>El total de Migue es:");
         echo $sumaMigue;
-
-        if($miSuma>$sumaDineroYAhir && $miSuma>$sumaMigue)
+       
+        if($sumaDineroAngel > $miSuma && $sumaDineroAngel > $sumaMigue && $sumaDineroAngel > $sumaDineroYAhir)
+            echo"<br>Angel se dispara las papas y los refrescos";
+        else if($miSuma>$sumaDineroYAhir && $miSuma>$sumaMigue && $miSuma>$sumaDineroAngel)
             echo"<br>Andrés se dispara las papas y los refrescos";
-        else if($sumaDineroYAhir > $miSuma && $sumaDineroYAhir > $sumaMigue)
+        else if($sumaDineroYAhir > $miSuma && $sumaDineroYAhir > $sumaMigue && $sumaDineroYAhir > $sumaDineroAngel)
             echo"<br>Yahir se dispara las papas y los refrescos";
-        else if($sumaMigue> $miSuma && $sumaMigue > $sumaDineroYAhir)
+        else if($sumaMigue> $miSuma && $sumaMigue > $sumaDineroYAhir && $sumaMigue> $sumaDineroAngel)
             echo"<br>Migue se dispara las papas y los refrescos";
             
 
