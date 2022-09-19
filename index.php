@@ -77,8 +77,11 @@
     <script>
         function generaUrl() {
             var terminoBusqueda = document.getElementById("bsq").value;
+            console.log(terminoBusqueda)            
             var orden = document.getElementById("orderBy").value;
+            console.log(orden)  
             var numElementos = document.getElementById("pageSize").value;
+            console.log(numElementos)  
             document.getElementById('resultado').innerHTML = '<p>https://dpstreet.mx/bsq/' + terminoBusqueda + '?' +
                 orden + '&' + numElementos + '</p>';
         }
