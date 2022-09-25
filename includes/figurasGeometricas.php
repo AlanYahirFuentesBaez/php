@@ -23,8 +23,11 @@ $lado=10;
 
 $perimetroCuadrado=perimetro($numLadosCuadrado,$lado);
 $areaCuadrado=area($lado,$lado);
-
-
 echo "El area del cuadrado es: $areaCuadrado ";
 echo "El perimetro del cuadrado es: $perimetroCuadrado";
+
+//Programa del rectangulo(area y perimetro)
+
+
+//programatriangulo(area y perimetro)
 ?>
