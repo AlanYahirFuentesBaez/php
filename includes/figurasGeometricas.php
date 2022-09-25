@@ -27,7 +27,15 @@ echo "El area del cuadrado es: $areaCuadrado ";
 echo "El perimetro del cuadrado es: $perimetroCuadrado";
 
 //Programa del rectangulo(area y perimetro)
+$perimetroRectangulo=perimetro($numLadosRectangulo,$base);
+$areaRectangulo=area($base,$altura);
+echo "El area del Rectangulo es: $baseRectangulo ";
+echo "El perimetro del Rectangulo es: $perimetroRectangulo";
 
 
 //programatriangulo(area y perimetro)
+$perimetrotriangulo=perimetro($numLadostriangulo,$Base);
+$areatriangulo=area($Base,altura$);
+echo "El area del triangulo es: $basetriangulo ";
+echo "El perimetro del triangulo es: $perimetrotriangulo";
 ?>
