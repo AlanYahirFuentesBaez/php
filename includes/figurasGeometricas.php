@@ -16,26 +16,39 @@
 <?php
 include("functions/math.php");
 $numLadosCuadrado=4;
-$numLadosRectangulo=4;
+$numLadosRectangulo=2;
 $numLadosTriangulo=3;
 
 $lado=10;
 
+$base=15;
+$ladoDerecho=10;
+$ladoRectangulo=$base+$ladoDerecho;
+
+$alturaTriangulo=13;
+
+
+
 $perimetroCuadrado=perimetro($numLadosCuadrado,$lado);
 $areaCuadrado=area($lado,$lado);
 echo "El area del cuadrado es: $areaCuadrado ";
+echo "<br>";
 echo "El perimetro del cuadrado es: $perimetroCuadrado";
 
 //Programa del rectangulo(area y perimetro)
-$perimetroRectangulo=perimetro($numLadosRectangulo,$base);
-$areaRectangulo=area($base,$altura);
-echo "El area del Rectangulo es: $baseRectangulo ";
+$perimetroRectangulo=perimetro($numLadosRectangulo,$ladoRectangulo);
+$areaRectangulo=area($base,$ladoDerecho);
+echo "<br><br>";
+echo "El area del Rectangulo es: $areaRectangulo ";
+echo "<br>";
 echo "El perimetro del Rectangulo es: $perimetroRectangulo";
 
 
 //programatriangulo(area y perimetro)
-$perimetrotriangulo=perimetro($numLadostriangulo,$Base);
-$areatriangulo=area($Base,altura$);
-echo "El area del triangulo es: $basetriangulo ";
-echo "El perimetro del triangulo es: $perimetrotriangulo";
+$perimetroTriangulo=perimetro($numLadosTriangulo,$base);
+$areaTriangulo=areaTriangulo($base,$alturaTriangulo);
+echo "<br><br>";
+echo "El area del triangulo es: $areaTriangulo";
+echo "<br>";
+echo "El perimetro del triangulo es: $perimetroTriangulo";
 ?>
