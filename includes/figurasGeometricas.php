@@ -1,18 +1,20 @@
 <form action="index.php" method="post">
     <input id="base" type="text" name="base" placeholder="Base...">
     <input id="altura" type="text" name="altura" placeholder="Altura...">
-    <select id="figura" name="select">
+    <select id="figura" name="figura">
         <option value="cuad">Calcula Cuadrado</option>
         <option value="rect">Calcula Rectangulo</option>
         <option value="trian">Calcula Triangulo</option>
     </select>
-    <input type="submit" value="Calcular Figura" onclick="">
+    <input type="submit" value="Calcular Figura">
 </form>
 <?php
 echo "$_POST[base]";
 echo "$_POST[altura]";
 echo "$_POST[figura]";
 
+
+echo "<br>";
 include("functions/math.php");
 $numLadosCuadrado=4;
 $numLadosRectangulo=2;
