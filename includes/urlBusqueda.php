@@ -1,4 +1,3 @@
-
 <input id="bsq" type="text" name="busqueda" placeholder="Buscar...">
 <select id="orderBy" name="select">
     <option value="orderBy=5">Lo más nuevo primero</option>
