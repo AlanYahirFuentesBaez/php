@@ -1,19 +1,18 @@
-<input id="bsq" type="text" name="busqueda" placeholder="Buscar...">
-<select id="orderBy" name="select">
-    <option value="orderBy=5">Lo más nuevo primero</option>
-    <option value="orderBy=4">Mayor a menor precio</option>
-    <option value="orderBy=3">Menor a mayor precio</option>
-</select>
-<select id="pageSize" name="select">
-    <option value="pageSize=12">Mostrar 12 elemento</option>
-    <option value="pageSize=24">Mostrar 24 elemento</option>
-    <option value="pageSize=36">Mostrar 36 elemento</option>
-</select>
-<input type="submit" value="Generar" onclick="generaUrl()">
-
-<div id="resultado">
-</div>
+<form action="index.php" method="post">
+    <input id="base" type="text" name="base" placeholder="Base...">
+    <input id="altura" type="text" name="altura" placeholder="Altura...">
+    <select id="figura" name="select">
+        <option value="cuad">Calcula Cuadrado</option>
+        <option value="rect">Calcula Rectangulo</option>
+        <option value="trian">Calcula Triangulo</option>
+    </select>
+    <input type="submit" value="Calcular Figura" onclick="">
+</form>
 <?php
+echo "$_POST[base]";
+echo "$_POST[altura]";
+echo "$_POST[figura]";
+
 include("functions/math.php");
 $numLadosCuadrado=4;
 $numLadosRectangulo=2;
