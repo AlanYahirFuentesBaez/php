@@ -1,6 +1,4 @@
 <form action="index.php" method="post">
-    <input id="base" type="text" name="base" placeholder="Base...">
-    <input id="altura" type="text" name="altura" placeholder="Altura...">
     <select id="figura" name="figura">
         <option value="cuad">Calcula Cuadrado</option>
         <option value="rect">Calcula Rectángulo</option>
@@ -10,7 +8,8 @@
             <option value="esc">Escaleno</option>
         </optgroup>
 
-    </select>
+    </select>   
+
     <input type="submit" value="Calcular Figura">
 </form>
 <?php
@@ -24,6 +23,8 @@ echo $seleccionFigura;
 echo "<br>";
 
 if($seleccionFigura=="cuad"){
+    echo '<input id="base" type="text" name="base" placeholder="Base...">
+    <input id="altura" type="text" name="altura" placeholder="Altura...">';
     $numLadosCuadrado=4;
     $lado="$_POST[base]";
     floatval($lado);
@@ -36,6 +37,8 @@ if($seleccionFigura=="cuad"){
 }
 else if($seleccionFigura=="rect"){
     //Programa del rectangulo(area y perimetro)
+    echo '<input id="base" type="text" name="base" placeholder="Base...">
+    <input id="altura" type="text" name="altura" placeholder="Altura...">';
     $numLadosRectangulo=2;
     $ladoDerecho="$_POST[altura]";
     $base="$_POST[base]";
@@ -52,6 +55,9 @@ else if($seleccionFigura=="rect"){
 
 }
 else if($seleccionFigura=="trian"){
+    echo '<input id="base" type="text" name="base" placeholder="Base...">
+    <input id="altura" type="text" name="altura" placeholder="Altura...">';
+    
     //programatriangulo(area y perimetro)
     
     $numLadosTriangulo=3;
@@ -68,12 +74,11 @@ else if($seleccionFigura=="trian"){
     
 }
 else if($seleccionFigura=="iso"){
-    //programatriangulo(area y perimetro)
-    echo '<form action="index.php" method="post">
-    <input id="ladoFaltante" type="text" name="ladoFaltante" placeholder="Lado Triángulo...">
-    <input type="submit" value="Calcular Figura">
-    </form>';
     
+    //programatriangulo(area y perimetro)
+    echo '<input id="base" type="text" name="base" placeholder="Base...">
+    <input id="altura" type="text" name="altura" placeholder="Altura...">
+    <input id="lado3" type="text" name="lado3" placeholder="Lado 3...">';  
     
 
     $numLadosTriangulo=3;
@@ -91,6 +96,9 @@ else if($seleccionFigura=="iso"){
 }
 else if($seleccionFigura=="esc"){
     //programatriangulo(area y perimetro)
+    echo '<input id="base" type="text" name="base" placeholder="Base...">
+    <input id="altura" type="text" name="altura" placeholder="Altura...">
+    <input id="lado3" type="text" name="lado3" placeholder="Lado 3...">';
     
     $numLadosTriangulo=3;
     $alturaTriangulo="$_POST[altura]";
