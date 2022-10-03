@@ -1,6 +1,4 @@
 <form action="index.php" method="post">
-    <input id="base" type="text" name="base" placeholder="Base...">
-    <input id="altura" type="text" name="altura" placeholder="Altura...">
     <select id="figura" name="figura">
         <option value="cuad">Calcula Cuadrado</option>
         <option value="rect">Calcula Rectángulo</option>
@@ -13,25 +11,22 @@
     </select>
     <input type="submit" value="Calcular Figura">
 </form>
+
+
 <?php
 include("functions/math.php");
 
-
-echo "$_POST[base]";
-echo "$_POST[altura]";
 $seleccionFigura="$_POST[figura]";
 echo $seleccionFigura;
-echo "<br>";
+
 
 if($seleccionFigura=="cuad"){
-    $numLadosCuadrado=4;
-    $lado="$_POST[base]";
-    floatval($lado);
-    $perimetroCuadrado=perimetro($numLadosCuadrado,$lado);
-    $areaCuadrado=area($lado,$lado);
-    echo "El area del cuadrado es: $areaCuadrado ";
-    echo "<br>";
-    echo "El perimetro del cuadrado es: $perimetroCuadrado";
+    
+    echo ' <form action="procesarFigura.php" method="post">  
+              <input id="base" type="text" name="base" placeholder="Base...">
+              <input id="cuadrado" type="submit" value="Calcular Figura">    
+           </form>';
+    
 
 }
 else if($seleccionFigura=="rect"){
@@ -55,8 +50,9 @@ else if($seleccionFigura=="trian"){
     //programatriangulo(area y perimetro)
     
     $numLadosTriangulo=3;
-    $alturaTriangulo="$_POST[altura]";
     $base="$_POST[base]";
+    $alturaTriangulo="$_POST[altura]";
+       
     floatval($alturaTriangulo);
     floatval($base);
     $perimetroTriangulo=perimetro($numLadosTriangulo,$base);    
@@ -64,7 +60,7 @@ else if($seleccionFigura=="trian"){
     echo '<br>';
     echo "El area del triangulo es: $areaTriangulo";
     echo '<br>';
-    echo "El perimetro del triangulo es: $perimetroTriangulo";
+    echo " El perimetro del triangulo es: $perimetroTriangulo ";
     
 }
 else if($seleccionFigura=="iso"){
