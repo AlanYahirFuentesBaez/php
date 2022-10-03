@@ -55,16 +55,17 @@ else if($seleccionFigura=="trian"){
     //programatriangulo(area y perimetro)
     
     $numLadosTriangulo=3;
-    $alturaTriangulo="$_POST[altura]";
     $base="$_POST[base]";
+    $alturaTriangulo="$_POST[altura]";
+       
     floatval($alturaTriangulo);
     floatval($base);
     $perimetroTriangulo=perimetro($numLadosTriangulo,$base);    
     $areaTriangulo=areaTriangulo($base,$alturaTriangulo);
     echo '<br>';
-    echo 'El area del triangulo es: $areaTriangulo';
+    echo "El area del triangulo es: $areaTriangulo";
     echo '<br>';
-    echo "El perimetro del triangulo es: $perimetroTriangulo";
+    echo " El perimetro del triangulo es: $perimetroTriangulo ";
     
 }
 else if($seleccionFigura=="iso"){
