@@ -22,7 +22,7 @@ echo $seleccionFigura;
 
 if($seleccionFigura=="cuad"){
     
-    echo ' <form action="cuadrado.php" method="post">  
+    echo ' <form action="procesarFigura.php" method="post">  
               <input id="base" type="text" name="base" placeholder="Base...">
               <input id="cuadrado" type="submit" value="Calcular Figura">    
            </form>';
