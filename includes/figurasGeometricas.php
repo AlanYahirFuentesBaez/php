@@ -62,7 +62,7 @@ else if($seleccionFigura=="trian"){
     $perimetroTriangulo=perimetro($numLadosTriangulo,$base);    
     $areaTriangulo=areaTriangulo($base,$alturaTriangulo);
     echo '<br>';
-    echo 'El area del triangulo es: $areaTriangulo';
+    echo "El area del triangulo es: $areaTriangulo";
     echo '<br>';
     echo "El perimetro del triangulo es: $perimetroTriangulo";
     
