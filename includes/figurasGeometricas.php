@@ -20,30 +20,27 @@ $seleccionFigura="$_POST[figura]";
 echo $seleccionFigura;
 
 
-if($seleccionFigura=="cuad"){
+if($seleccionFigura=="cuad")
+{
     
     echo ' <form action="procesarFigura.php" method="post">  
               <input id="base" type="text" name="base" placeholder="Base...">
-              <input id="cuadrado" type="submit" value="Calcular Figura">    
+              <input id="cuadrado" type="submit" name="cuadrado" value="Cuadrado">    
            </form>';
     
 
 }
-else if($seleccionFigura=="rect"){
-    //Programa del rectangulo(area y perimetro)
-    $numLadosRectangulo=2;
-    $ladoDerecho="$_POST[altura]";
-    $base="$_POST[base]";
-    floatval($ladoDerecho);
-    floatval($base);
+else if($seleccionFigura=="rect")
+{
+  
     
-    $ladoRectangulo=$base+$ladoDerecho;
-    $perimetroRectangulo=perimetro($numLadosRectangulo,$ladoRectangulo);
-    $areaRectangulo=area($base,$ladoDerecho);
-    echo "<br><br>";
-    echo "El area del Rectangulo es: $areaRectangulo ";
-    echo "<br>";
-    echo "El perimetro del Rectangulo es: $perimetroRectangulo";
+    echo ' <form action="procesarFigura.php" method="post">  
+                 <input id="base" type="text" name="base" placeholder="Base...">
+                 <input id="altura" type="text" name="altura" placeholder="Base...">
+                 <input id="rectangulo" type="submit" name="rectangulo" value="Rectangulo">    
+            </form>';
+
+
 
 }
 else if($seleccionFigura=="trian"){

@@ -1,35 +1,10 @@
-
 <?php
 include("functions/math.php");
-
-
-
-
-    
-if($seleccionFigura="$_POST[cuadrado]")
-{
-
-echo $seleccionFigura;
-
-
-$numLadosCuadrado=4;
-$lado="$_POST[base]";
-floatval($lado);
-$perimetroCuadrado=perimetro($numLadosCuadrado,$lado);
-$areaCuadrado=area($lado,$lado);
+echo "$_POST[base]";
 echo "<br>";
-echo "El area del cuadrado es: $areaCuadrado ";
+echo "$_POST[altura]";
 echo "<br>";
-echo "El perimetro del cuadrado es: $perimetroCuadrado";
-echo "<br><br>";
-}
-
-else if($seleccionFigura="$_POST[rectangulo]")
-{
-
-    echo $seleccionFigura;
-   
-    $seleccionFigura="$_POST[rectangulo]";
+$seleccionFigura="$_POST[rectangulo]";
 
     $numLadosRectangulo=2;
     $ladoDerecho="$_POST[altura]";
@@ -44,8 +19,6 @@ else if($seleccionFigura="$_POST[rectangulo]")
     echo "El area del Rectangulo es: $areaRectangulo ";
     echo "<br>";
     echo "El perimetro del Rectangulo es: $perimetroRectangulo";
-}
-
 
 
 ?>
