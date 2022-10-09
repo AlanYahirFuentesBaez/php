@@ -24,43 +24,30 @@ if($seleccionFigura=="cuad"){
     
     echo ' <form action="procesarFigura.php" method="post">  
               <input id="base" type="text" name="base" placeholder="Base...">
-              <input id="cuadrado" type="submit" value="Calcular Figura">    
+              <input id="figura" type="submit" name="figura" value="Calcular cuadrado">    
            </form>';
     
 
 }
 else if($seleccionFigura=="rect"){
     //Programa del rectangulo(area y perimetro)
-    $numLadosRectangulo=2;
-    $ladoDerecho="$_POST[altura]";
-    $base="$_POST[base]";
-    floatval($ladoDerecho);
-    floatval($base);
+    echo ' <form action="procesarFigura.php" method="post">  
+              <input id="base"   type="text" name="base"   placeholder="Base...">
+              <input id="altura" type="text" name="altura" placeholder="Altura...">
+              <input id="figura" type="submit" name="figura" value="Calcular rectangulo">  
+           </form>';
     
-    $ladoRectangulo=$base+$ladoDerecho;
-    $perimetroRectangulo=perimetro($numLadosRectangulo,$ladoRectangulo);
-    $areaRectangulo=area($base,$ladoDerecho);
-    echo "<br><br>";
-    echo "El area del Rectangulo es: $areaRectangulo ";
-    echo "<br>";
-    echo "El perimetro del Rectangulo es: $perimetroRectangulo";
 
 }
 else if($seleccionFigura=="trian"){
     //programatriangulo(area y perimetro)
+    echo ' <form action="procesarFigura.php" method="post">  
+              <input id="base"   type="text" name="base"   placeholder="Base...">
+              <input id="altura" type="text" name="altura" placeholder="Altura...">
+              <input id="figura" type="submit" name="figura" value="Calcular triangulo equilatero">    
+           </form>';
     
-    $numLadosTriangulo=3;
-    $base="$_POST[base]";
-    $alturaTriangulo="$_POST[altura]";
-       
-    floatval($alturaTriangulo);
-    floatval($base);
-    $perimetroTriangulo=perimetro($numLadosTriangulo,$base);    
-    $areaTriangulo=areaTriangulo($base,$alturaTriangulo);
-    echo '<br>';
-    echo "El area del triangulo es: $areaTriangulo";
-    echo '<br>';
-    echo " El perimetro del triangulo es: $perimetroTriangulo ";
+    
     
 }
 else if($seleccionFigura=="iso"){
