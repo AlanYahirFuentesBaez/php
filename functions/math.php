@@ -16,5 +16,11 @@ function perimetro($numLados, $lado) {
 
 }
 
+function perimetroIsoEsc($lado1, $lado2, $lado3) {
+    $perimetroIsoEsc=$lado1+$lado2+$lado3;
+    return $perimetro;
+
+}
+
 
 ?>
