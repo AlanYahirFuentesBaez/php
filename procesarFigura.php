@@ -52,16 +52,17 @@ else if($opcion=="Calcular triangulo equilatero"){
     echo " El perimetro del triangulo es: $perimetroTriangulo ";
 }
 else if($opcion=="Calcular triangulo isoceles/escaleno"){
-$numLadosTriangulo=3;
-$alturaTriangulo="$_POST[altura]";
-$base="$_POST[base]";
-floatval($alturaTriangulo);
-floatval($base);
-$perimetroTriangulo=perimetro($numLadosTriangulo,$base);    
-$areaTriangulo=areaTriangulo($base,$alturaTriangulo);
-echo "<br><br>";
-echo "El area del triangulo es: $areaTriangulo";
-echo "<br>";
-echo "El perimetro del triangulo es: $perimetroTriangulo";
+
+    $numLadosTriangulo=3;
+    $alturaTriangulo="$_POST[altura]";
+    $base="$_POST[base]";
+    floatval($alturaTriangulo);
+    floatval($base);
+    $perimetroTriangulo=perimetro($numLadosTriangulo,$base);    
+    $areaTriangulo=areaTriangulo($base,$alturaTriangulo);
+    echo "<br><br>";
+    echo "El area del triangulo es: $areaTriangulo";
+    echo "<br>";
+    echo "El perimetro del triangulo es: $perimetroTriangulo";
 }
 ?>

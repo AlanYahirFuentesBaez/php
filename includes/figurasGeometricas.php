@@ -52,12 +52,12 @@ else if($seleccionFigura=="trian"){
 }
 else if($seleccionFigura=="iso"){
     echo ' <form action="procesarFigura.php" method="post"> 
-    <input id="lado1" type="text" name="lado1" placeholder="Lado1...">
-    <input id="lado2" type="text" name="lado2" placeholder="Lado2...">
-    <input id="lado3" type="text" name="lado3" placeholder="Lado3...">
-    <input id="altura" type="text" name="altura" placeholder="altura...">
-    <input id="figura" type="submit" name="figura" value="Calcular triangulo isoceles/escaleno"> 
-    </form>';
+                <input id="lado1" type="text" name="lado1" placeholder="Lado1...">
+                <input id="lado2" type="text" name="lado2" placeholder="Lado2...">
+                <input id="lado3" type="text" name="lado3" placeholder="Lado3...">
+                <input id="altura" type="text" name="altura" placeholder="altura...">
+                <input id="figura" type="submit" name="figura" value="Calcular triangulo isoceles/escaleno"> 
+            </form>';
     
     
 
