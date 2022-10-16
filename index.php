@@ -20,9 +20,9 @@
     include("includes/urlBusqueda.php");
     ?>
 
-    <h1>Calculo de área y perímetro</h1>
+    <h1>Cálculo de área y perímetro de figuras geométricas</h1>
     <?php
-    include("includes/figurasGeometricas.php");
+    include("includes/figurasGeometricas/figurasGeometricas.php");
     ?>
 
 
