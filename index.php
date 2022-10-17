@@ -20,7 +20,8 @@
     include("includes/urlBusqueda.php");
     ?>
 
-    <h1>Cálculo de área y perímetro de figuras geométricas</h1>
+    <h1 class="titulos">Cálculo de área y perímetro de figuras geométricas</h1>
+    <h2>Selecciona la figura que deseas calcular e ingresa los datos para conocer el perímetro y el área correspondientes.</h2>
     <?php
     include("includes/figurasGeometricas/figurasGeometricas.php");
     ?>
