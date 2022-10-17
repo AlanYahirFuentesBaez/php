@@ -15,8 +15,6 @@
 
 
 <?php
-include("functions/math.php");
-
 $seleccionFigura="$_POST[figura]";
 //echo $seleccionFigura;
 

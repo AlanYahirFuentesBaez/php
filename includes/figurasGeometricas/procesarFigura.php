@@ -1,5 +1,5 @@
 <?php
-include("functions/math.php");
+include("C://xampp/htdocs/php/functions/math.php");
 
 $opcion="$_POST[figura]";
 echo "$opcion";
@@ -19,7 +19,7 @@ if($opcion=="Calcular cuadrado"){
 
 }
 
-else if($opcion=="Calcular rectangulo"){
+else if($opcion=="Calcular rectángulo"){
     echo "<h1>Este es el cálculo de tu rectángulo</h1>";
     $numLadosRectangulo=2;
     $ladoDerecho="$_POST[altura]";
@@ -36,7 +36,7 @@ else if($opcion=="Calcular rectangulo"){
     echo "El perimetro del Rectangulo es: $perimetroRectangulo";
 }
 
-else if($opcion=="Calcular triangulo equilatero"){
+else if($opcion=="Calcular triángulo equilátero"){
     echo "<h1>Este es el cálculo de tu triángulo equilátero</h1>";
     $numLadosTriangulo=3;
     $base="$_POST[base]";
@@ -51,7 +51,7 @@ else if($opcion=="Calcular triangulo equilatero"){
     echo '<br>';
     echo " El perimetro del triangulo es: $perimetroTriangulo ";
 }
-else if($opcion=="Calcular triangulo isoceles/escaleno"){
+else if($opcion=="Calcular triangulo isóceles/escaleno"){
 
     $numLadosTriangulo=3;
     $lado1="$_POST[lado1]";
