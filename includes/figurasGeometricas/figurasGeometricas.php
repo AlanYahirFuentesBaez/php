@@ -1,22 +1,24 @@
-<form action="index.php" method="post">    
+<form action="index.php" method="post">
+    Selecciona la figura geométrica que desees calcular:<br>    
     <select id="figura" name="figura">
-        <option value="cuad">Calcular Cuadrado</option>
-        <option value="rect">Calcular Rectángulo</option>
+        <option value="cuad">Cuadrado</option>
+        <option value="rect">Rectángulo</option>
         <optgroup label="Triángulos">
-            <option value="trian">Calcular Triángulo Equilátero</option>
-            <option value="iso">Calcular Triangulo Isóceles/Escaleno</option>
+            <option value="trian">Triángulo Equilátero</option>
+            <option value="iso">Triangulo Isóceles/Escaleno</option>
         </optgroup>
 
     </select>
-    <input type="submit" value="Ingresar Datos">
+    <input type="submit" value="Seleccionar figura">
 </form>
+<br><br>
 
 
 <?php
 include("functions/math.php");
 
 $seleccionFigura="$_POST[figura]";
-echo $seleccionFigura;
+//echo $seleccionFigura;
 
 
 if($seleccionFigura=="cuad"){
