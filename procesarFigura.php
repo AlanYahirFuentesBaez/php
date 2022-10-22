@@ -73,10 +73,8 @@ else if($seleccionFigura="$_POST[isosceles]")
     
 
     $numLadosTriangulo=3;
-    $alturaTriangulo="$_POST[altura]";
-    $base="$_POST[base]";
-    floatval($alturaTriangulo);
-    floatval($base);
+    $altura="$_POST[altura]";
+    floatval($altura);
     $lado1="$_POST[lado1]";
     $lado2="$_POST[lado2]";
     $lado3="$_POST[lado3]";
@@ -84,8 +82,8 @@ else if($seleccionFigura="$_POST[isosceles]")
     floatval($lado2);
     floatval($lado2);
 
-    $perimetroIsoEsc=perimetroIsoEsc($lado1+$lado2+$lado3);    
-    $areaTriangulo=areaTriangulo($base,$alturaTriangulo);
+    $perimetroIsoEsc=$lado1+$lado2+$lado3;    
+    $areaTriangulo=areaTriangulo($altura,$lado1);
 
     echo "<br><br>";
     echo "El area del triangulo es: $areaTriangulo";
