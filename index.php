@@ -46,7 +46,7 @@
     }
     else if($seleccionPrograma=="pro4"){
         echo '<h1 class="titulos">Cuestionario de Danza</h1>';        
-        include("includes/preguntasDanza.php");
+        include("includes/preguntasDanza/preguntasDanza.php");
         
     }
 ?>
