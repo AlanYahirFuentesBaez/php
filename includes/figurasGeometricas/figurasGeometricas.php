@@ -1,5 +1,5 @@
 <form action="index.php" method="post">
-    Selecciona la figura geométrica que desees calcular:<br>    
+    Selecciona la figura geométrica que desees calcular:<br>
     <select id="figura" name="figura">
         <option value="cuad">Cuadrado</option>
         <option value="rect">Rectángulo</option>
@@ -45,9 +45,8 @@ else if($seleccionFigura=="trian"){
               <input id="altura" type="text" name="altura" placeholder="Ingresa la altura del triángulo equilátero">
               <input id="figura" type="submit" name="figura" value="Calcular triángulo equilátero">    
            </form>';
-    
-    
-    
+
+
 }
 else if($seleccionFigura=="iso"){
     echo ' <form action="includes/figurasGeometricas/procesarFigura.php" method="post"> 
@@ -57,15 +56,9 @@ else if($seleccionFigura=="iso"){
                 <input id="altura" type="text" name="altura" placeholder="Ingresa la altura del tríangulo">
                 <input id="figura" type="submit" name="figura" value="Calcular triangulo isóceles/escaleno"> 
             </form>';
-    
-    
 
-   
-    
+
 }
-
-
-echo "<br>";
 
 
 

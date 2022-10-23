@@ -10,22 +10,49 @@
 </head>
 
 <body>
-    <p>Este programa hace comparaciones con el If-Else</p>
-    <?php
-    include("includes/programaComparacion.php");
-    ?>
 
-    <h1>Genera una URL de búsqueda</h1>
-    <?php
-    include("includes/urlBusqueda.php");
-    ?>
+    <h1>Estos son los programas que vamos haciendo.</h1>
+    <form action="index.php" method="post">
+        selecciona el que quieras ver:<br>
+        <select id="programa" name="programa">
+            <option value="pro1">Comparación If-Else</option>
+            <option value="pro2">Generar URL </option>
+            <option value="pro3"> Calcular área y perímetro</option>
 
-    <h1 class="titulos">Cálculo de área y perímetro de figuras geométricas</h1>
-    <h2>Selecciona la figura que deseas calcular e ingresa los datos para conocer el perímetro y el área correspondientes.</h2>
-    <?php
-    include("includes/figurasGeometricas/figurasGeometricas.php");
-    ?>
+        </select>
+        <input type="submit" value="Seleccionar programa">
+    </form>
 
+    <?php            
+    $seleccionPrograma="$_POST[programa]";
+    
+    echo ($seleccionPrograma=="pro1");
+    
+    if($seleccionPrograma=="pro1"){
+         echo '<h1>Este programa hace comparaciones con el If-Else</h1>';
+        
+          include("includes/programaComparacion.php");
+        
+    }
+    else if($seleccionPrograma=="pro2"){
+        echo '<h1>Genera una URL de búsqueda</h1>';
+        
+        include("includes/urlBusqueda.php");
+    
+
+    }
+    
+    else if($seleccionPrograma=="pro3"){
+
+        echo '<h1 class="titulos">Cálculo de área y perímetro de figuras geométricas</h1>';
+        echo '<h2>Selecciona la figura que deseas calcular e ingresa los datos para conocer el perímetro y el área
+            correspondientes.</h2>';
+        
+        include("includes/figurasGeometricas/figurasGeometricas.php");
+        
+
+    }
+?>
 
 </body>
 
