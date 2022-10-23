@@ -15,9 +15,10 @@
     <form action="index.php" method="post">
         selecciona el que quieras ver:<br>
         <select id="programa" name="programa">
-            <option selected value="pro1">Comparación If-Else</option>
+            <option value="pro1">Comparación If-Else</option>
             <option value="pro2">Generar URL </option>
             <option value="pro3"> Calcular área y perímetro</option>
+            <option value="pro4">Cuestionario de Danza</option>
 
         </select>
         <input type="submit" value="Seleccionar programa">
@@ -43,7 +44,17 @@
         include("includes/figurasGeometricas.php");
         
     }
+    else if($seleccionPrograma=="pro4"){
+        echo '<h1 class="titulos">Cuestionario de Danza</h1>';        
+        include("includes/preguntasDanza.php");
+        
+    }
 ?>
+
+<script>
+    
+
+</script>
 
 </body>
 
