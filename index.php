@@ -15,7 +15,7 @@
     <form action="index.php" method="post">
         selecciona el que quieras ver:<br>
         <select id="programa" name="programa">
-            <option value="pro1">Comparación If-Else</option>
+            <option selected value="pro1">Comparación If-Else</option>
             <option value="pro2">Generar URL </option>
             <option value="pro3"> Calcular área y perímetro</option>
 
@@ -40,7 +40,7 @@
         echo '<h1 class="titulos">Cálculo de área y perímetro de figuras geométricas</h1>';
         echo '<h2>Selecciona la figura que deseas calcular e ingresa los datos para conocer el perímetro y el área
             correspondientes.</h2>';
-        include("includes/figurasGeometricas/figurasGeometricas.php");
+        include("includes/figurasGeometricas.php");
         
     }
 ?>
