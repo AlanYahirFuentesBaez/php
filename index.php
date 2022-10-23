@@ -26,31 +26,22 @@
     <?php            
     $seleccionPrograma="$_POST[programa]";
     
-    echo ($seleccionPrograma=="pro1");
-    
     if($seleccionPrograma=="pro1"){
-         echo '<h1>Este programa hace comparaciones con el If-Else</h1>';
-        
-          include("includes/programaComparacion.php");
+        echo '<h1>Este programa hace comparaciones con el If-Else</h1>';
+        include("includes/programaComparacion.php");
         
     }
     else if($seleccionPrograma=="pro2"){
         echo '<h1>Genera una URL de búsqueda</h1>';
-        
         include("includes/urlBusqueda.php");
     
-
-    }
-    
+    }    
     else if($seleccionPrograma=="pro3"){
-
         echo '<h1 class="titulos">Cálculo de área y perímetro de figuras geométricas</h1>';
         echo '<h2>Selecciona la figura que deseas calcular e ingresa los datos para conocer el perímetro y el área
             correspondientes.</h2>';
-        
         include("includes/figurasGeometricas/figurasGeometricas.php");
         
-
     }
 ?>
 

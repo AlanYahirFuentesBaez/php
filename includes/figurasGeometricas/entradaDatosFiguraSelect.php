@@ -1,18 +1,3 @@
-<form action="figurasGeometricas.php" method="post">
-    Selecciona la figura geométrica que desees calcular:<br>
-    <select id="figura" name="figura">
-        <option value="cuad">Cuadrado</option>
-        <option value="rect">Rectángulo</option>
-        <optgroup label="Triángulos">
-            <option value="trian">Triángulo Equilátero</option>
-            <option value="iso">Triangulo Isóceles/Escaleno</option>
-        </optgroup>
-
-    </select>
-    <input type="submit" value="Seleccionar figura">
-</form>
-<br><br>
-
 <?php
 
 $seleccionFigura="$_POST[figura]";
@@ -49,7 +34,7 @@ else if($seleccionFigura=="trian"){
 
 }
 else if($seleccionFigura=="iso"){
-    echo ' <form action="includes/figurasGeometricas/procesarFigura.php" method="post"> 
+    echo ' <form action="procesarFigura.php" method="post"> 
                 <input id="lado1" type="text" name="lado1" placeholder="Ingresa la base/Lado#1 del triángulo">
                 <input id="lado2" type="text" name="lado2" placeholder="Ingresa el Lado #2 del triángulo">
                 <input id="lado3" type="text" name="lado3" placeholder="Ingresa el Lado #3 del triángulo">
