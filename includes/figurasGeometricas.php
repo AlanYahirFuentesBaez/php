@@ -14,7 +14,6 @@
 <br><br>
 
 <?php
-
 $seleccionFigura="$_POST[figura]";
 //echo $seleccionFigura;
 
